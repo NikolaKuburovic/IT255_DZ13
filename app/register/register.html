@@ -1,0 +1,27 @@
+<div class="frm">
+    <h1>MetHotels - Register</h1>
+
+    <form class="forma" role="form" [ngFormModel]="registerForm" method="POST">
+        <div class="alert alert-danger" style="display: none;">
+        </div>
+        <div class="form-group">
+            <label for="ime">Име:</label>
+            <input type="text" placeholder="Ваше право име" class="form-control" ngControl='ime'>
+        </div>
+        <div class="form-group">
+            <label for="prezime">Презиме:</label>
+            <input type="text" placeholder="Ваше право презиме" class="form-control" ngControl='prezime'>
+        </div>
+        <div class="form-group">
+            <label for="username">Корисничко име:</label>
+            <input type="text" placeholder="Унесите корисничко име" class="form-control" ngControl='username'>
+        </div>
+        <div class="form-group">
+            <label for="password">Лозинка:</label>
+            <!--OVDE JE PROMENJENO UMESTO PWD STAVLJENO U "FOR" PASSWORD-->
+            <input type="password" placeholder="Унесите лозинку" class="form-control" ngControl='password'>
+        </div>
+        <button (click)="onRegister()" class="btn btn-default">Региструјте се</button><br /><br />
+        <p class="sub"><a href="login">Већ сте регистровани?</a></p>
+    </form>
+</div>

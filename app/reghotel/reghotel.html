@@ -1,0 +1,32 @@
+<br />
+<form role="form" [ngFormModel]="registerForm">
+    <div class="form-group">
+        <label for="naziv">Назив хотела:</label>
+        <input type="text" class="form-control" ngControl='naziv' required>
+    </div>
+    <div class="form-group">
+        <label for="brojSoba">Број соба</label>
+        <input type="text" class="form-control" ngControl='brojSoba' required>
+    </div>
+    <div class="form-group">
+        <label for="kategorija">Категорија:</label>
+        <select class="form-control" ng-selected="Da" ngControl='kategorija' required>
+        <option value="1" >1</option>
+        <option value="2" >2</option>
+        <option value="3" >3</option>
+        <option value="4" >4</option>
+        <option value="5" >5</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="adresa">Адреса:</label>
+        <input type="text" class="form-control" ngControl='adresa' required>
+    </div>
+    <div class="form-group">
+        <label for="lokacija">Локација:</label>
+        <input type="text" class="form-control" ngControl='lokacija' required>
+    </div>
+
+
+    <button (click)="dodajHotel()" class="btn btn-default">Региструј хотел</button>
+</form>

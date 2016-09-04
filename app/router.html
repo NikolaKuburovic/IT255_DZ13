@@ -1,0 +1,49 @@
+<div class="container">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false"
+                    aria-controls="navbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                <a class="navbar-brand" [routerLink]="['./MainPage']">MetHotels</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li [class.active]="router.isRouteActive(router.generate(['/MainPage']))"><a [routerLink]="['./MainPage']">Почетна</a></li>
+                    <li [class.active]="router.isRouteActive(router.generate(['/AboutUs']))"><a [routerLink]="['./AboutUs']">О нама</a></li>
+                    <li><a [routerLink]="['./Sobe']">Собе</a></li>
+                    <li *ngIf="isAuth == 'yes'" [class.active]="router.isRouteActive(router.generate(['/RegSoba']))"><a [routerLink]="['./RegSoba']">Додај собу</a></li>
+                    <li *ngIf="isAuth == 'yes'" [class.active]="router.isRouteActive(router.generate(['/RegHotel']))"><a [routerLink]="['./RegHotel']">Додај хотел</a></li>
+                    <li><a href="#">Контакт</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li *ngIf="isAuth == 'no'" [class.active]="router.isRouteActive(router.generate(['/Register']))"><a [routerLink]="['./Register']"><span class="glyphicon glyphicon-user"></span> Региструјте се</a></li>
+                    <li *ngIf="isAuth == 'no'" [class.active]="router.isRouteActive(router.generate(['/Login']))"><a [routerLink]="['./Login']"><span class="glyphicon glyphicon-log-in"></span>Пријавите се</a></li>
+                    <li *ngIf="isAuth == 'yes'"><a (click)="onLogout()">Одјавите се</a></li>
+                    <li id="lang">
+                        <p>Језик</p>
+                    </li>
+                    <li>
+                        <button type="button" id="jezik" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                <span class="caret"></span>
+                                <span class="sr-only">Opcije</span>
+                            </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Српски</a></li>
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Deutch</a></li>
+                            <li><a href="#">Русский</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <router-outlet></router-outlet>
+    </div>
+</div>

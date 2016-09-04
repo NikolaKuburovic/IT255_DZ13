@@ -1,0 +1,18 @@
+<div class="frm">
+    <h1>MetHotels - Login</h1>
+
+    <form class="forma" role="form" [ngFormModel]="loginForm" method="POST">
+        <div class="alert alert-danger" style="display: none;">
+        </div>
+        <div class="form-group">
+            <label for="username">Корисничко име:</label>
+            <input type="text" placeholder="Ваше корисничко име" class="form-control" ngControl='username'>
+        </div>
+        <div class="form-group">
+            <label for="pwd">Лозинка:</label>
+            <input type="password" placeholder="Ваша лозинка" class="form-control" ngControl='password'>
+        </div>
+        <button (click)="onLogin()" class="btn btn-default">Пријавите се</button><br /><br />
+        <p class="sub"><a href="register">Нисте регистровани?</a></p>
+    </form>
+</div>

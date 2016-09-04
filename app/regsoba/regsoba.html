@@ -1,0 +1,49 @@
+<br />
+<form role="form" [ngFormModel]="registerForm">
+    <div class="form-group">
+        <label for="ime">Име собе:</label>
+        <input type="text" class="form-control" ngControl='ime' required>
+    </div>
+    <div class="form-group">
+        <label for="sprat">Спрат</label>
+        <input type="text" class="form-control" ngControl='sprat' required>
+    </div>
+    <div class="form-group">
+        <label for="kreveti">Број кревета:</label>
+        <input type="text" class="form-control" ngControl='kreveti' required>
+    </div>
+    <div class="form-group">
+        <label for="m2">Површина собе (м2):</label>
+        <input type="text" class="form-control" ngControl='m2' required>
+    </div>
+    <div class="form-group">
+        <label for="tv">TV:</label>
+        <select class="form-control" ng-selected="Da" ngControl='tv' required>
+        <option value="Da" >Да</option>
+        <option value="Ne" >Не</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="internet">Интернет:</label>
+        <select class="form-control" ng-selected="Da" ngControl='internet' required>
+        <option value="Da" >Да</option>
+        <option value="Ne" >Не</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="djakuzi">Ђакузи:</label>
+        <select class="form-control" ng-selected="Da" ngControl='djakuzi' required>
+        <option value="Da" >Да</option>
+        <option value="Ne" >Не</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="rezervacija">Резервација:</label>
+        <select class="form-control" ng-selected="REZERVISANA" ngControl='rezervacija' required>
+        <option value="REZERVISANA" >Резервисана</option>
+        <option value="SLOBODNA" >Слободна</option>
+        </select>
+    </div>
+
+    <button (click)="dodajSobu()" class="btn btn-default">Региструј собу</button>
+</form>

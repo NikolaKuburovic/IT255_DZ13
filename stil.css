@@ -1,0 +1,121 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+.navbar {
+    margin-bottom: 0px;
+}
+
+.navbar-brand {
+    font-family: "Lobster";
+    font-size: 3em;
+}
+
+.container-fluid {
+    background: #fff;
+    border-color: #fff;
+}
+
+.btn-success{
+    background-image: none;
+    background-repeat: no-repeat;
+}
+
+input.form-control.ng-untouched.ng-pristine.ng-valid{
+    margin-right: 20px;
+}
+
+form.navbar-form.navbar-left{
+    margin-bottom: 40px;
+}
+.navbar-inverse {
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.navbar-inverse .navbar-nav > li > a{
+    color: #777;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+    color: #111;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a{
+    text-shadow: none;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #111;
+}
+
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+    color: #222;
+}
+
+.navbar-nav.navbar-right:last-child {
+    margin-right: -30px;
+}
+
+.navbar-inverse .navbar-toggle {
+    background-color: #333;
+}
+
+.glyphicon-log-in {
+    margin-right: 5px;
+}
+
+#jezik {
+    background-color: #777;
+    border-color: #777;
+}
+
+#lang {
+    color: #777;
+    padding-top: 15px;
+    margin-right: 5px;
+    margin-left: 15px;
+}
+
+#jezik:hover,
+#jezik:focus,
+#jezik:active,
+#jezik.active,
+#jezik .open > .dropdown-toggle#jezik {
+    background-color: #999;
+    border-color: #999;
+}
+
+#jezik {
+    margin-top: 12px;
+}
+
+.col-sm-4 {
+    background-color: #fefefe;
+}
+
+.row {
+    margin: 0 auto;
+    display: block;
+    clear: both;
+    background-color: #fefefe;
+    padding-bottom: 30px;
+}
+
+#footer {
+    background: #333;
+    height: 60px;
+    font-size: 0.9em;
+}
+
+#footer_omot {
+    height: 60px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#copyright {
+    float: left;
+    color: #777;
+    padding-left: 20px;
+    padding-top: 25px;
+}
